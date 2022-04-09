@@ -74,7 +74,7 @@ ENV SCREEN_WIDTH=1280 \
 
 RUN apt-get update -qqy \
     && apt-get -qqy install --no-install-recommends \
-        dbus-x11 xfce4 \
+        dbus-x11 xfce4 lightdm \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
